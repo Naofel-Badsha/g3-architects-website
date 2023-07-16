@@ -1,24 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
 
-.text-light-gray{
+.text-light-gray {
     color: #727272;
 }
 
 
-.section-title{
-     font-size: 2rem;
-     font-weight: 700;
-     color: #131313;
-     padding: 5px;
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #131313;
+    padding: 5px;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #ff900e;
     color: #fff;
     border-radius: 5px;
@@ -30,29 +31,29 @@
 }
 
 /*---------------Header----------Start----------------*/
-header{
-   background: rgba(255, 144, 14, 0.10);
-   padding: 50px 250px;
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 250px;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-nav > ul{
+nav>ul {
     display: flex;
 }
 
-nav > ul > li{
+nav>ul>li {
     list-style: none;
     margin-right: 30px;
     font-size: 1rem;
     font-weight: 500;
 }
 
-nav > ul > li a{
+nav>ul>li a {
     text-decoration: none;
     color: cadetblue;
     font-size: 20px;
@@ -60,26 +61,27 @@ nav > ul > li a{
 
 
 /*-----------Banner-----------Start-------------*/
-.banner-content{
+.banner-content {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
 
-.banner-title{
+.banner-title {
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
 }
 
-.banner img{
+.banner img {
     margin-top: 20px;
     width: 100%;
 }
 
-.hide{
+.hide {
     display: none;
 }
+
 /*-----------Banner-----------Start-------------*/
 /*---------------Header----------End----------------*/
 
@@ -87,49 +89,50 @@ nav > ul > li a{
 
 
 /*-------------Main----------Start---------------*/
-main{
+main {
     max-width: 1400px;
     margin: 0 auto;
 }
 
 
 /*-------Tean-------Section--------Start--------*/
-.teams-container{
+.teams-container {
     display: flex;
     margin-top: 30px;
-    align-items: center;    
+    align-items: center;
 }
 
-.teams-img-container{
+.teams-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 30px;
     gap: 1.5rem;
 }
 
-.teams-text-content{
+.teams-text-content {
     padding-right: 70px;
     padding-left: 70px;
 }
 
-.teams-title{
+.teams-title {
     font-size: 2.8rem;
 }
 
-.teams-title .Quick-List{
-   color: #727272;
-   font-weight: 500;
+.teams-title .Quick-List {
+    color: #727272;
+    font-weight: 500;
 }
 
-.teams-title .Of-Our{
+.teams-title .Of-Our {
     color: #131313;
     font-weight: 600;
 }
 
-.teams-title .Text-Features{
+.teams-title .Text-Features {
     color: #ff900e;
     font-weight: 700;
 }
+
 /*-------Tean-------Section--------End--------*/
 
 
@@ -137,38 +140,60 @@ main{
 
 
 /*-------Facts-------Section--------Start--------*/
-.facts-title{
+.facts-title {
     text-align: center;
 }
 
-.facts-some-container{
+.facts-some-container {
     display: flex;
     justify-content: space-around;
+    gap: 10px;
     margin-top: 40px;
 }
 
-.facts-some-container .card{
+.facts-some-container .card {
     border-radius: 8px;
     border: 1px solid #ff900e;
     text-align: center;
     padding: 40px 30px;
 }
 
-.facts-some-container .card-stats{
+.facts-some-container .card-stats {
     font-size: 2rem;
     color: #424242;
 }
 
-.facts-some-container.card-title{
-   font-weight: 600;
-   font-size: 1.25rem;
+.facts-some-container.card-title {
+    font-weight: 600;
+    font-size: 1.25rem;
 }
+
 /*-------Facts-------Section--------End--------*/
 
 
 
 
+/*-------Responser-------Section--------Start--------*/
+.Responser {
+    text-align: center;
+    margin-top: 40px;
+}
 
+.recponser-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.recponser-container img{
+    width: 140px;
+    text-align: center;
+}
+
+/*-------Responser-------Section--------End--------*/
 
 
 
@@ -182,6 +207,11 @@ main{
 /*-------------Main----------End---------------*/
 
 
+.cradiet{
+    text-align: center;
+    padding: 30px;
+    color: cadetblue;
+}
 
 
 
@@ -199,67 +229,75 @@ main{
 /*-------------Responsive------------Start----------*/
 /*------------Mobile------------Device--------------*/
 @media screen and (max-width: 576px) {
-    header{
-     padding: 20px;
-     }
+    header {
+        padding: 20px;
+    }
 
-     nav{
+    nav {
         flex-direction: column;
-     }
+    }
 
-     .banner-title{
+    .banner-title {
         font-size: 2rem;
-     }
+    }
 
-     /*----------Team-------Respinsive--------*/
-     .teams-container{
+    /*----------Team-------Respinsive--------*/
+    .teams-container {
         flex-direction: column-reverse;
-     }
+    }
 
-     .teams-img-container{
+    .teams-img-container {
         grid-template-columns: 1fr;
         padding: 30px;
 
     }
 
-    .teams-img-container img{
+    .teams-img-container img {
         width: 100%;
     }
 
-    .teams-text-content{
-       padding: 30px;
+    .teams-text-content {
+        padding: 30px;
     }
 
-    .teams-text-content{
+    .teams-text-content {
         padding-right: 20px;
         padding-left: 20px;
     }
 
     /*---------Facts---------Responsive---------*/
-    .facts-some-container{
+    .facts-some-container {
         flex-direction: column;
         padding-right: 20px;
         padding-left: 20px;
         gap: 20px;
     }
 
-    
+    /*-------Responser-------Section--------*/
+    .recponser-container {
+        flex-direction: column;
+    }
+
 }
 
 
 /*------------Tablet------------Device--------------*/
-@media screen and (min-width: 576px) and (max-width: 992px){
-    header{
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    header {
         padding: 50px;
-    }   
-    nav{
+    }
+
+    nav {
         flex-direction: column;
-     }
+    }
 
-     /*---------Team-------Respinsive--------*/
-     .teams-container{
-        flex-direction: column-reverse;   
-     }
+    /*---------Team-------Respinsive--------*/
+    .teams-container {
+        flex-direction: column-reverse;
+    }
+
+    /*-------Responser-------Section--------*/
+    .recponser-container {
+        flex-direction: column;
+    }
 }
-
-
