@@ -138,6 +138,69 @@ main {
 
 
 
+/*-------Feature-------Section--------Start--------*/
+.featuer{
+    margin-top: 130px;
+    display: flex;
+    gap: 30px;
+    padding: 50px;
+}
+
+.feature-content .card{
+    padding: 30px;
+    margin-bottom: 20px;
+   border-radius: 8px;
+   background: #f3eaea;
+   transition: 0.2s;
+}
+
+.feature-content .card:hover{
+    box-shadow: 0px 4px 30px 0px lime;
+}
+
+.feature-img img{
+   width: 100%;
+   margin-top: 120px;
+}
+
+.featuer .section-title{
+    border-left: 5px solid #ff900e;
+    padding-left: 20px;
+}
+
+.featuer .text-light-gray{
+ margin-bottom: 20px;
+}
+
+.feature-content .text-light-gray{
+    padding: 5px;
+}
+
+.ten-years-batch{
+    border-radius: 8px;
+    background-color: #ff900e;
+    width: 340px;
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.ten-years-batch h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.ten-years-batch p{
+    font-size: 2rem;
+    font-weight: 500;
+}
+/*-------Feature-------Section--------End--------*/
+
+
+
 
 /*-------Facts-------Section--------Start--------*/
 .facts-title {
@@ -278,6 +341,24 @@ main {
         flex-direction: column;
     }
 
+    .featuer{
+      flex-direction: column;
+    }
+
+    .feature-img img{
+        width: 90%;
+        margin-left:0;
+     }
+
+     .ten-years-batch{
+        position: static;
+        max-width: 200px;
+     }
+
+     .ten-years-batch h2{
+        font-size: 2.5rem;
+     }
+
 }
 
 
@@ -300,4 +381,8 @@ main {
     .recponser-container {
         flex-direction: column;
     }
+
+    .featuer{
+        flex-direction: column;
+      }
 }
